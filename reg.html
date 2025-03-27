@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder="Enter your first name">
+            </div>
+            <div class="input-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Enter your last name">
+            </div>
+            <div class="input-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your age">
+            </div>
+            <div class="input-group" style="display: flex; align-items: center; gap: 15px;">
+                <label>Gender:</label>
+                <label for="male" style="display: flex; align-items: center; gap: 5px;">
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                </label>
+                <label for="female" style="display: flex; align-items: center; gap: 5px;">
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                </label>
+            </div>
+            
+            
+            
+            <div class="input-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone No:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="input-group">
+                <label for="interests">Interests:</label>
+                <select id="interests" style="width: 107%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;">
+                
+                    <option value="">Select an interest</option>
+                    <option value="football">Football</option>
+                    <option value="cricket">Cricket</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="badminton">Badminton</option>
+                    <option value="chess">Chess</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="cycling">Cycling</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="activity">Type of activity:</label>
+                <input type="text" id="activity" placeholder="Enter your activities">
+            </div>
+            
+            <!-- Passport Size Image Upload -->
+            <div class="input-group">
+                <label for="passportPhoto">Upload Profile Picture:</label>
+                <input type="file" id="passportPhoto" accept="image/*">
+                <div id="imagePreview"></div>
+            </div>
+
+            <br>
+            <a href="index.html"><button type="submit">Register</button></a>
+            <p id="error-message"></p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            window.location.href = "index.html"; // Redirect to login page (index.html)
+        });
+    
+        document.getElementById("passportPhoto").addEventListener("change", function(event) {
+            const imagePreview = document.getElementById("imagePreview");
+            imagePreview.innerHTML = ""; // Clear previous preview
+    
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const img = document.createElement("img");
+                    img.src = e.target.result;
+                    imagePreview.appendChild(img);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+    
+</body>
+</html>
