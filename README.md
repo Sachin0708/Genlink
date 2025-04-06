@@ -1,7 +1,7 @@
 # Genlink 👵🤝🧑  
 
 A Flutter application that connects young adults (19-23) with elderly individuals in India to combat loneliness through meaningful conversations about shared interests.
-
+sample output interface` - ![Screenshot (29)](https://github.com/user-attachments/assets/23fee68a-9e72-42a0-8690-f5a37dd6f5cb)
 
 ## Features ✨
 - **User Authentication**: Sign up as an Elderly or Companion
@@ -27,5 +27,5 @@ A Flutter application that connects young adults (19-23) with elderly individual
 ### Installation
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/elderly-companion-app.git
+   git clone https://github.com/your-username/Genlink.git
    cd elderly-companion-app
