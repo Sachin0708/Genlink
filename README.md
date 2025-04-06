@@ -27,5 +27,5 @@ sample output interface` - ![Screenshot (29)](https://github.com/user-attachment
 ### Installation
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/Genlink.git
-   cd elderly-companion-app
+   git clone https://github.com/Sachin0708/Genlink.git
+   cd Genlink
