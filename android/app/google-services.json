@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "291242131091",
+    "project_id": "genlink-496d5",
+    "storage_bucket": "genlink-496d5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291242131091:android:8d4ea82df1fdfef5a5d766",
+        "android_client_info": {
+          "package_name": "com.example.genlink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGt3sxz-tiyipmrCmbyXmBlG7P2XXw40A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

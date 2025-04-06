@@ -1,0 +1,2 @@
+-dontwarn android.view.**
+-keep class com.google.firebase.** { *; }
